@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <input type="checkbox" id="menuCheckbox"/>
+    <input type="checkbox" id="searchCheckbox"/>
+
+
+<div class="side-menu">
+    <label for="menuCheckbox" class="checkbox-label side-menu-label">
+        <div class="abs-center white-x"></div>
+    </label>
+    <div class="rela-block menu-content">
+        <h3 class="rela-block list-header">Browse</h3>
+        <ul class="rela-block options-list">
+            <a style="text-decoration: none" href="{% url 'home' %}"><li>All</li></a>
+            {% for cat in category %}
+                <a style="text-decoration: none" href="{% url 'category' cat.id %}"><li>{{ cat.name }}</li></a>
+            {% endfor %}
+        </ul>
+        <h3 class="rela-block list-header">Information</h3>
+        <ul class="rla-block options-list">
+            <a href="{% url 'about' %}"><li>About Us</li></a>
+            <a href="#"><li>Developers</li></a>
+{#             <form action="{% url 'set_language' %}" method="post" id="lang_form"> #}
+{#              {% csrf_token %} #}
+{#                 <input type="hidden" name="next" value="{{ redirect_to }}"> #}
+{#                      <select name="language" id="" onchange="change_lang();">#}
+{#                        {% get_available_languages as LANGUAGES %}#}
+{#                            {% get_language_info_list for LANGUAGES as languages %}#}
+{#                               {% for language in languages %}#}
+{#                                   <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %} selected {% endif %}>#}
+{#                                       {{ language.name_local }} ({{ language.code }})#}
+{#                                    </option>#}
+{#                               {% endfor %}#}
+{#                    </select>#}
+{#            </form>#}
+        </ul>
+    </div>
+    <div class="social-buttons-container">
+        <div class="rela-inline social-button twitter"></div>
+        <div class="rela-inline social-button facebook"></div>
+        <div class="rela-inline social-button pinterest"></div>
+        <div class="rela-inline social-button instagram"></div>
+    </div>
+</div>
+
+<div class="rela-block top-bar"><a class="link"></a></div>
+
+<div class="rela-block top-container">
+    <div class="rela-block top-center-container">
+        <div class="inner-container top-text-container">
+            <h2 class="rela-block top-main-text"></h2>
+        </div>
+        <div class="logo-center">
+{#            <img class="logo" src="/static/media/images/logo.png">#}
+        </div>
+        <div class="inner-container top-search-container">
+            <p class="search-text">Search</p>
+            <input type="text" placeholder="Type Something" class="top-search"/>
+        </div>
+    </div>
+    <label for="menuCheckbox" class="checkbox-label menu-label">
+        <div class="abs-center black-lines"></div>
+    </label>
+</div>
+
+<div class="rela-block image-layout-selector">
+    <div class="floated layout-option columns active">
+        <div class="abs-center bars"></div>
+    </div>
+</div>
+
+    <div class="rela-block image-grid-container">
+        <div class="floated image-column">
+            {% for prod in product_item %}
+                <div class="rela-block image">
+                    <div class="image-hover">
+                        <a class='butn' href="{% url 'product' prod.id %}">
+                            <img class="img" src="{{ prod.image.url }}">
+                        </a>
+                        <div class="overlay"></div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+
+<footer id="footer">
+   {#  <h2>&ndash;THANKS FOR VISITING!&ndash;</h2>#}
+    <div class="footer-rights-section">
+    {#     <p>&copy; 2018 appretur-kaiserbrecht.de </p> #}
+    </div>
+</footer>
+
+{% endblock %}

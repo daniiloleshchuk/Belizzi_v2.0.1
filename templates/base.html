@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IQChair</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/static/media/images/favicon.ico" type="image/x-icon">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="{% static '/css/style.css' %}">
+    <link rel="stylesheet" type="text/css" media="all" href="{% static '/css/style.css' %}">
+</head>
+<body>
+
+        <div class="wrapper-content">
+
+            {% include 'navbar.html' %}
+
+            {% block content %}
+
+            {% endblock content %}
+
+        </div>
+
+     	{% include 'footer.html' %}
+
+    <script src="{% static '/js/index.js' %}"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+
+</body>
+</html>
