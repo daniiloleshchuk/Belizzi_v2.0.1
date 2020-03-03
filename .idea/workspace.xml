@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3f0bc53c-55ba-46c0-8764-2125f4ab8684" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="3f0bc53c-55ba-46c0-8764-2125f4ab8684" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/landing/about_us.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/landing/about_us.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +21,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1YXeqoyi8WYiBJDLNepiGNwjwiR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -26,6 +33,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -37,18 +45,6 @@
       <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$/products" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="Belizzi" type="Python.DjangoServer" factoryName="Django server">
@@ -88,14 +84,32 @@
       <workItem from="1583093589939" duration="5610000" />
       <workItem from="1583163127950" duration="3462000" />
       <workItem from="1583167128150" duration="15000" />
-      <workItem from="1583167271061" duration="178000" />
+      <workItem from="1583167271061" duration="421000" />
+      <workItem from="1583170455187" duration="2570000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
+    <state x="432" y="188" key="SettingsEditor" timestamp="1583254152219">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state x="432" y="188" key="SettingsEditor/0.23.1680.947@0.23.1680.947" timestamp="1583254152219" />
     <state x="100" y="87" width="1240" height="788" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1583100115528">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
