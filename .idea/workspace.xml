@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="3f0bc53c-55ba-46c0-8764-2125f4ab8684" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/landing/about_us.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/landing/about_us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/static_dev/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/static_dev/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/landing/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/landing/category.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/landing/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/landing/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +96,9 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -114,5 +121,13 @@
       <screen x="0" y="23" width="1440" height="800" />
     </state>
     <state x="100" y="87" width="1240" height="788" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1440.800@0.23.1440.800" timestamp="1583100115528" />
+    <state x="406" y="348" key="com.intellij.ide.util.TipDialog" timestamp="1583499062777">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state x="406" y="348" key="com.intellij.ide.util.TipDialog/0.23.1680.947@0.23.1680.947" timestamp="1583499062777" />
+    <state x="396" y="259" width="670" height="676" key="search.everywhere.popup" timestamp="1583264686483">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state x="396" y="259" width="670" height="676" key="search.everywhere.popup/0.23.1680.947@0.23.1680.947" timestamp="1583264686483" />
   </component>
 </project>
