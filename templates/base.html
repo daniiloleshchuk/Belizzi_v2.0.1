@@ -3,34 +3,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>IQChair</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="/static/media/images/favicon.ico" type="image/x-icon">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Belizzi</title>
+
     <!-- Custom styles -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="{% static '/css/style.css' %}">
-    <link rel="stylesheet" type="text/css" media="all" href="{% static '/css/style.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static '/css/bootstrap.min.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static '/css/style.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static '/css/margins.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static '/css/fonts.css' %}" />
+
+
 </head>
+
 <body>
-
-        <div class="wrapper-content">
-
-            {% include 'navbar.html' %}
+        {% include 'navbar.html' %}
 
             {% block content %}
 
             {% endblock content %}
 
-        </div>
-
      	{% include 'footer.html' %}
 
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="{% static '/js/handleCounter.js' %}"></script>
     <script src="{% static '/js/index.js' %}"></script>
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+
+    <script>
+		var boxes = $('div.restaurant-block');
+
+		boxes.click(function(){
+		  $(this).toggleClass('active');
+		});
+
+</script>
+<script>
+		var checkout = $('div.quick-checkout');
+		var checkoutOpen = $('div.dash-to-open')
+		checkoutOpen.click(function(){
+		  checkout.toggleClass('active');
+		});
+</script>
+<script>
+    $(function ($) {
+        var options = {
+            minimum: 1,
+            maximize: 10,
+            onChange: valChanged,
+            onMinimum: function(e) {
+                console.log('reached minimum: '+e)
+            },
+            onMaximize: function(e) {
+                console.log('reached maximize'+e)
+            }
+        }
+        $('#handleCounter').handleCounter(options)
+    })
+    function valChanged(d) {
+    }
+</script>
 
 </body>
 </html>

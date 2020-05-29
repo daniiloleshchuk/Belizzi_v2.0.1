@@ -28,6 +28,14 @@ def categories(request, category_id):
     return render(request, 'landing/category.html', locals())
 
 
-def about(request):
+def categoriespage(request):
 
-    return render(request, 'landing/about_us.html', locals())
+    category = ProductCategory.objects.filter(is_active=True)
+    product_item = Product.objects.filter(is_active=True)
+
+    if translation.LANGUAGE_SESSION_KEY in request.session:
+        del request.session[translation.LANGUAGE_SESSION_KEY]
+
+    return render(request, 'landing/categories.html', locals())
+
+

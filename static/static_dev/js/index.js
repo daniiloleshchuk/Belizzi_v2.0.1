@@ -5,3 +5,4 @@ $('.close, .photo-container').click(function(){
 });
 // preventing clicks on the menu closing it for now because there is nothing inside yet.
 $('.photo-tab').click(function(){ return false; });
+

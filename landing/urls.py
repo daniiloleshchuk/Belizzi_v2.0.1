@@ -10,7 +10,8 @@ urlpatterns = [
     url(r'^$', views.home, name='home'),
     url(r'^category/(?P<category_id>\w+)/$', views.categories, name='category'),
     url(r'^category/', views.categories, name='category'),
-    url(r'^about/', views.about, name='about'),
+
+    url(r'^categories/', views.categoriespage, name='categories'),
 
 
 ]

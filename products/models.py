@@ -1,8 +1,7 @@
 from django.db import models
 from django.utils.translation import ugettext_lazy
 from tinymce.models import HTMLField
-import datetime
-import psutil
+
 class ProductCategory(models.Model):
     name = models.CharField(ugettext_lazy('name'), max_length=64, blank=True, null=True, default=None)
     is_active = models.BooleanField(default=True)
@@ -77,39 +76,4 @@ class ProductImage(models.Model):
         verbose_name = "Фотографія"
         verbose_name_plural = "Фотографії"
 
-class News(models.Model):
-    tittle = models.CharField(ugettext_lazy('tittle'), max_length=228)
-    short_descr = HTMLField(ugettext_lazy('short_descr'))
-    description = HTMLField(ugettext_lazy('description'))
-
-    date = models.DateField(default=datetime.date.today)
-
-    is_active = models.BooleanField(default=True)
-
-    created = models.DateTimeField(auto_now_add=True, auto_now=False)
-    updated = models.DateTimeField(auto_now_add=False, auto_now=True)
-
-    def __str__(self):
-        return "%s, %s" % (self.tittle, self.date)
-
-    class Meta:
-        verbose_name = "New"
-        verbose_name_plural = "News"
-
-class GalleryImage(models.Model):
-    tittle = models.CharField(ugettext_lazy('tittle'), max_length=228)
-    description = HTMLField(ugettext_lazy('description'))
-    image = models.ImageField(default=None, upload_to='products_images/', blank=True, null=True)
-
-    is_active = models.BooleanField(default=True)
-
-    created = models.DateTimeField(auto_now_add=True, auto_now=False)
-    updated = models.DateTimeField(auto_now_add=False, auto_now=True)
-
-    def __str__(self):
-        return "%s" % self.tittle
-
-    class Meta:
-        verbose_name = "Gallery"
-        verbose_name_plural = "Gallery"
 
